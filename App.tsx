@@ -1,33 +1,26 @@
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import {StatusBar} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
+import BottomNaviogator from './src/Navigations/BottomNaviogator';
+import AuthNavigator from './src/Navigations/AuthNavigator';
 
 const App = () => {
+  const token = false;
   return (
-    <SafeAreaView>
-      <ScrollView>
+    <>
+      {token ? (
         <NavigationContainer>
           <StatusBar backgroundColor={'#00b029'} barStyle={'light-content'} />
-          <View style={styles.container}>
-            <Text>Test</Text>
-          </View>
+          <BottomNaviogator />
         </NavigationContainer>
-      </ScrollView>
-    </SafeAreaView>
+      ) : (
+        <NavigationContainer>
+          <StatusBar backgroundColor={'#00b029'} barStyle={'light-content'} />
+          <AuthNavigator />
+        </NavigationContainer>
+      )}
+    </>
   );
 };
 
 export default App;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
