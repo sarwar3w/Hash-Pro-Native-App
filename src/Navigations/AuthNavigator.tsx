@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native';
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import Login from '../screens/Auth/Login';
-import Reegister from '../screens/Auth/Reegister';
+import Register from '../screens/Auth/Reegister';
 import ForgotPassword from '../screens/Auth/ForgotPassword';
 
 const AuthNavigator = () => {
@@ -21,7 +21,7 @@ const AuthNavigator = () => {
         options={{
           headerShown: false,
         }}
-        component={Reegister}
+        component={Register}
       />
       <Stack.Screen
         name="Forgot Password"

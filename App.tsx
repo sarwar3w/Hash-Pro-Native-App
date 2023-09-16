@@ -10,12 +10,12 @@ const App = () => {
     <>
       {token ? (
         <NavigationContainer>
-          <StatusBar backgroundColor={'#00b029'} barStyle={'light-content'} />
+          <StatusBar backgroundColor={'red'} barStyle={'light-content'} />
           <BottomNaviogator />
         </NavigationContainer>
       ) : (
         <NavigationContainer>
-          <StatusBar backgroundColor={'#00b029'} barStyle={'light-content'} />
+          <StatusBar backgroundColor={'red'} barStyle={'light-content'} />
           <AuthNavigator />
         </NavigationContainer>
       )}
