@@ -66,7 +66,7 @@ const Register = ({navigation}) => {
             <TextInputCustom
               placeholder="Enter Your Sponsor Id"
               iconName="person"
-              iconColor="#F26868"
+              iconColor="#F5C445"
               name="sponsor"
               width="100%"
               value={''}
@@ -78,10 +78,10 @@ const Register = ({navigation}) => {
             <TextInputCustom
               placeholder="Your sponsor name"
               iconName="person"
-              iconColor="#F26868"
+              iconColor="#F5C445"
               name="sponsor_name"
               width="100%"
-              value={''}
+              defaultValue={''}
             />
           </View>
           {/* full name field */}
@@ -90,7 +90,7 @@ const Register = ({navigation}) => {
             <TextInputCustom
               placeholder="Enter your name"
               iconName="person"
-              iconColor="#F26868"
+              iconColor="#F5C445"
               name="sponsor_name"
               width="100%"
               value={''}
@@ -102,10 +102,10 @@ const Register = ({navigation}) => {
             <TextInputCustom
               placeholder="Enter your email"
               iconName="mail"
-              iconColor="#F26868"
+              iconColor="#F5C445"
               name="email"
               width="100%"
-              value={''}
+              defaultValue={''}
             />
           </View>
           {/* password field */}
@@ -114,10 +114,10 @@ const Register = ({navigation}) => {
             <TextInputCustom
               placeholder="Enter Your Password"
               iconName="key"
-              iconColor="#F26868"
+              iconColor="#F5C445"
               name="password"
               width="100%"
-              value={''}
+              defaultValue={''}
               secureTextEntry={!isOpen}
               rightIcon={isOpen ? 'eye-outline' : 'eye-off-outline'}
             />
@@ -128,10 +128,10 @@ const Register = ({navigation}) => {
             <TextInputCustom
               placeholder="Enter Your Confirm Password"
               iconName="key"
-              iconColor="#F26868"
+              iconColor="#F5C445"
               name="confirm_password"
               width="100%"
-              value={''}
+              defaultValue={''}
               secureTextEntry={!isOpen}
               rightIcon={isOpen ? 'eye-outline' : 'eye-off-outline'}
             />
@@ -165,7 +165,7 @@ const Register = ({navigation}) => {
         </View> */}
         <View style={styles.checkedBtn}>
           <CheckBox
-            tintColors={{true: 'green', false: 'gray'}}
+            tintColors={{true: '#F5C445', false: 'gray'}}
             disabled={false}
             value={checked}
             onValueChange={newValue => setChecked(newValue)}
@@ -173,7 +173,7 @@ const Register = ({navigation}) => {
           <TouchableOpacity onPress={() => handleClick()}>
             <Text style={{color: 'gray', fontSize: 15, alignItems: 'center'}}>
               I agree to{' '}
-              <Text style={{color: '#F26868'}}>terms and conditions</Text>
+              <Text style={{color: '#F5C445'}}>terms and conditions</Text>
             </Text>
           </TouchableOpacity>
         </View>
@@ -247,7 +247,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   linkText: {
-    color: '#F26868',
+    color: '#F5C445',
   },
   submitBtn: {
     flexDirection: 'row',
@@ -261,7 +261,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 50,
-    backgroundColor: '#F26868',
+    backgroundColor: '#F5C445',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -277,11 +277,11 @@ const styles = StyleSheet.create({
   checkedBtn: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center', marginTop: 10
+    justifyContent: 'center',
+    marginTop: 10,
   },
   check: {
     color: '#000',
     borderColor: '#000',
   },
 });
-

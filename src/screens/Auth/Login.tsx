@@ -25,10 +25,10 @@ const Login = ({navigation}) => {
             <TextInputCustom
               placeholder="Enter Your Username or Email"
               iconName="person"
-              iconColor="#F26868"
+              iconColor="#F5C445"
               name="mobile"
               width="100%"
-              value={''}
+              defaultValue={''}
             />
           </View>
           {/* password field */}
@@ -37,10 +37,10 @@ const Login = ({navigation}) => {
             <TextInputCustom
               placeholder="Enter Your Password"
               iconName="key"
-              iconColor="#F26868"
+              iconColor="#F5C445"
               name="password"
               width="100%"
-              value={''}
+              defaultValue={''}
               secureTextEntry={!isOpen}
               rightIcon={isOpen ? 'eye-outline' : 'eye-off-outline'}
             />
@@ -123,7 +123,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   linkText: {
-    color: '#F26868',
+    color: '#F5C445',
     fontSize: 16,
     fontWeight: '500',
   },
@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 50,
-    backgroundColor: '#F26868',
+    backgroundColor: '#F5C445',
     alignItems: 'center',
     justifyContent: 'center',
   },

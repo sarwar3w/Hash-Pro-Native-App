@@ -23,10 +23,10 @@ const ForgotPassword = ({}) => {
             <TextInputCustom
               placeholder="Enter Your Email"
               iconName="person"
-              iconColor="#F26868"
+              iconColor="#F5C445"
               name="mobile"
               width="100%"
-              value={''}
+              defaultValue={''}
             />
           </View>
         </View>
@@ -91,7 +91,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     paddingVertical: 10,
     borderRadius: 50,
-    backgroundColor: '#f25757',
+    backgroundColor: '#F5C445',
     alignItems: 'center',
     justifyContent: 'center',
   },

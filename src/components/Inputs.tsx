@@ -36,7 +36,7 @@ const TextInputCustom = props => {
       <Icon
         name={props.rightIcon}
         size={22}
-        color={'#ff1100'}
+        color={'#F5C445'}
         style={styles.icon}
       />
     </View>
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
   },
   icon: {
     marginVertical: 0,
-    borderRadius: 100
+    borderRadius: 100,
   },
   inputField: {
     fontSize: 12,
