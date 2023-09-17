@@ -1,7 +1,6 @@
 import {StyleSheet} from 'react-native';
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import SwapStack from './Stacks/SwapStack';
 import WalletStack from './Stacks/WalletStack';
 import TeamStack from './Stacks/TeamStack';
 import StatisticsStack from './Stacks/StatisticsStack';
@@ -9,6 +8,7 @@ import OIcon from 'react-native-vector-icons/Octicons';
 import MIcon from 'react-native-vector-icons/MaterialIcons';
 import IIcon from 'react-native-vector-icons/Ionicons';
 import HomeStack from './Stacks/HomeStack';
+import SwapStack from './Stacks/SwapStack';
 const BottomNaviogator = () => {
   const Tab = createBottomTabNavigator();
   return (
@@ -83,5 +83,3 @@ const BottomNaviogator = () => {
 };
 
 export default BottomNaviogator;
-
-const styles = StyleSheet.create({});
