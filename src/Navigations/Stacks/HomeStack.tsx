@@ -1,21 +1,46 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet} from 'react-native';
 import React from 'react';
-import {ScrollView} from 'react-native';
+import {createStackNavigator} from '@react-navigation/stack';
+import HomeHeader from '../../components/HomeHeader';
+import Home from '../../screens/Home/Home';
+import StackPro from '../../screens/Home/StackPro';
+import HeaderStacking from '../../components/HeaderStaking';
 
-const HomeStack = () => {
+const Stack = createStackNavigator();
+
+const HomeStack = ({navigation}:any) => {
   return (
-    <ScrollView>
-      <View style={styles.container}>
-        <Text>HomeStack</Text>
-      </View>
-    </ScrollView>
+    <Stack.Navigator>
+      <Stack.Screen
+        name="Home"
+        options={{
+          headerTitle: () => (
+            <HomeHeader navigation={navigation} name="#PRO-Network" />
+          ),
+          headerShown: true,
+          headerStyle: {
+            backgroundColor: '#B5853D',
+          },
+        }}
+        component={Home}
+      />
+      <Stack.Screen
+        name="Staking"
+        options={{
+          headerTitle: () => (
+            <HeaderStacking navigation={navigation} name="Stacking" />
+          ),
+          headerShown: true,
+          headerStyle: {
+            backgroundColor: '#B5853D',
+          },
+        }}
+        component={StackPro}
+      />
+    </Stack.Navigator>
   );
 };
 
 export default HomeStack;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
+const styles = StyleSheet.create({});
