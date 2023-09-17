@@ -23,7 +23,7 @@ const ForgotPassword = ({}) => {
             <TextInputCustom
               placeholder="Enter Your Email"
               iconName="person"
-              iconColor="red"
+              iconColor="#F26868"
               name="mobile"
               width="100%"
               value={''}

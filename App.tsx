@@ -5,7 +5,7 @@ import BottomNaviogator from './src/Navigations/BottomNaviogator';
 import AuthNavigator from './src/Navigations/AuthNavigator';
 
 const App = () => {
-  const token = false;
+  const token = true;
   return (
     <>
       {token ? (
