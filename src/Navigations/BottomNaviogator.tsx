@@ -20,7 +20,7 @@ const BottomNaviogator = () => {
           tabBarIcon: ({color}) => (
             <OIcon name="home" size={20} color={color} />
           ),
-          tabBarActiveTintColor: '#000',
+          tabBarActiveTintColor: '#F5C445',
           tabBarItemStyle: {paddingVertical: 5},
           headerShown: false,
         }}
@@ -33,7 +33,7 @@ const BottomNaviogator = () => {
           tabBarIcon: ({color}) => (
             <MIcon name="swap-calls" size={25} color={color} />
           ),
-          tabBarActiveTintColor: '#000',
+          tabBarActiveTintColor: '#F5C445',
           tabBarItemStyle: {paddingVertical: 5},
           headerShown: false,
         }}
@@ -46,7 +46,7 @@ const BottomNaviogator = () => {
           tabBarIcon: ({color}) => (
             <IIcon name="wallet-outline" size={25} color={color} />
           ),
-          tabBarActiveTintColor: '#000',
+          tabBarActiveTintColor: '#F5C445',
           tabBarItemStyle: {paddingVertical: 5},
           headerShown: false,
         }}
@@ -59,7 +59,7 @@ const BottomNaviogator = () => {
           tabBarIcon: ({color}) => (
             <IIcon name="people-outline" size={25} color={color} />
           ),
-          tabBarActiveTintColor: '#000',
+          tabBarActiveTintColor: '#F5C445',
           tabBarItemStyle: {paddingVertical: 5},
           headerShown: false,
         }}
@@ -72,7 +72,7 @@ const BottomNaviogator = () => {
           tabBarIcon: ({color}) => (
             <IIcon name="stats-chart-outline" size={25} color={color} />
           ),
-          tabBarActiveTintColor: '#000',
+          tabBarActiveTintColor: '#F5C445',
           tabBarItemStyle: {paddingVertical: 5},
           headerShown: false,
         }}

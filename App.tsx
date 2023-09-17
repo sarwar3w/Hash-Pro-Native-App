@@ -3,10 +3,10 @@ import {NavigationContainer} from '@react-navigation/native';
 import React from 'react';
 import BottomNaviogator from './src/Navigations/BottomNaviogator';
 import AuthNavigator from './src/Navigations/AuthNavigator';
-import ColorScheme from './src/utilities/ColorScheme';
+
 
 const App = () => {
-  const token = false;
+  const token = true;
   return (
     <>
       {token ? (
