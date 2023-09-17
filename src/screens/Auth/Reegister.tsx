@@ -66,7 +66,7 @@ const Register = ({navigation}) => {
             <TextInputCustom
               placeholder="Enter Your Sponsor Id"
               iconName="person"
-              iconColor="red"
+              iconColor="#F26868"
               name="sponsor"
               width="100%"
               value={''}
@@ -78,7 +78,7 @@ const Register = ({navigation}) => {
             <TextInputCustom
               placeholder="Your sponsor name"
               iconName="person"
-              iconColor="red"
+              iconColor="#F26868"
               name="sponsor_name"
               width="100%"
               value={''}
@@ -90,7 +90,7 @@ const Register = ({navigation}) => {
             <TextInputCustom
               placeholder="Enter your name"
               iconName="person"
-              iconColor="red"
+              iconColor="#F26868"
               name="sponsor_name"
               width="100%"
               value={''}
@@ -102,7 +102,7 @@ const Register = ({navigation}) => {
             <TextInputCustom
               placeholder="Enter your email"
               iconName="mail"
-              iconColor="red"
+              iconColor="#F26868"
               name="email"
               width="100%"
               value={''}
@@ -114,7 +114,7 @@ const Register = ({navigation}) => {
             <TextInputCustom
               placeholder="Enter Your Password"
               iconName="key"
-              iconColor="red"
+              iconColor="#F26868"
               name="password"
               width="100%"
               value={''}
@@ -128,7 +128,7 @@ const Register = ({navigation}) => {
             <TextInputCustom
               placeholder="Enter Your Confirm Password"
               iconName="key"
-              iconColor="red"
+              iconColor="#F26868"
               name="confirm_password"
               width="100%"
               value={''}
@@ -173,7 +173,7 @@ const Register = ({navigation}) => {
           <TouchableOpacity onPress={() => handleClick()}>
             <Text style={{color: 'gray', fontSize: 15, alignItems: 'center'}}>
               I agree to{' '}
-              <Text style={{color: 'red'}}>terms and conditions</Text>
+              <Text style={{color: '#F26868'}}>terms and conditions</Text>
             </Text>
           </TouchableOpacity>
         </View>
@@ -247,7 +247,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   linkText: {
-    color: 'red',
+    color: '#F26868',
   },
   submitBtn: {
     flexDirection: 'row',
@@ -261,7 +261,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 50,
-    backgroundColor: 'red',
+    backgroundColor: '#F26868',
     alignItems: 'center',
     justifyContent: 'center',
   },
