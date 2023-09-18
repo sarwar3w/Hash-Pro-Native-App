@@ -12,6 +12,7 @@ import SwapStack from './Stacks/SwapStack';
 const BottomNaviogator = () => {
   const Tab = createBottomTabNavigator();
   return (
+    <>
     <Tab.Navigator>
       <Tab.Screen
         options={{
@@ -78,7 +79,8 @@ const BottomNaviogator = () => {
         name="Statistics screen"
         component={StatisticsStack}
       />
-    </Tab.Navigator>
+      </Tab.Navigator>
+    </>
   );
 };
 

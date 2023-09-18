@@ -3,35 +3,35 @@ import React from 'react';
 import IIcon from 'react-native-vector-icons/Ionicons';
 import EIcon from 'react-native-vector-icons/EvilIcons';
 
-const HeaderStacking = ({navigation, name}) => {
+const HeaderStacking = ({navigation, name}:any) => {
   return (
     <View style={styles.headerWrapper}>
-      <View style={styles.headerContainer}>
+      <View>
         <View style={styles.headerSegment}>
-          <View style={styles.headerLeft}>
-            {/* <TouchableOpacity
-              style={styles.notification}
-              //   onPress={() => navigation.navigate('notification')}
+          <View>
+            <TouchableOpacity
+              
+                onPress={() => navigation.navigate('notification')}
             >
               <IIcon name="notifications" size={20} color="#fff" />
-            </TouchableOpacity> */}
+            </TouchableOpacity>
           </View>
           <View style={styles.headerMiddle}>
-            {/* <Image
+            <Image
               style={{width: 30, height: 30}}
               source={{
                 uri: 'https://res.cloudinary.com/deavhufn6/image/upload/v1690996976/dream-power_byudms.png',
               }}
-            /> */}
+            />
             <Text style={styles.logo}>{name}</Text>
           </View>
-          <View style={styles.headerRight}>
-            {/* <TouchableOpacity
-              style={styles.notification}
-              //   onPress={() => navigation.navigate('notification')}
+          <View>
+            <TouchableOpacity
+              
+                onPress={() => navigation.navigate('notification')}
             >
               <EIcon name="navicon" size={20} color="#fff" />
-            </TouchableOpacity> */}
+            </TouchableOpacity>
           </View>
         </View>
       </View>

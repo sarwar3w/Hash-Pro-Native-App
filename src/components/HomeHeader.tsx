@@ -3,7 +3,7 @@ import React from 'react';
 import IIcon from 'react-native-vector-icons/Ionicons';
 import EIcon from 'react-native-vector-icons/EvilIcons';
 
-const HomeHeader = ({navigation, name}) => {
+const HomeHeader = ({navigation, name}:any) => {
   return (
     <View style={styles.headerWrapper}>
       <View>
@@ -11,24 +11,24 @@ const HomeHeader = ({navigation, name}) => {
           <View>
             <TouchableOpacity
 
-            //   onPress={() => navigation.navigate('notification')}
+              onPress={() => navigation.navigate('notification')}
             >
               <IIcon name="notifications" size={20} color="#fff" />
             </TouchableOpacity>
           </View>
           <View style={styles.headerMiddle}>
-            {/* <Image
+            <Image
               style={{width: 30, height: 30}}
               source={{
                 uri: 'https://res.cloudinary.com/deavhufn6/image/upload/v1690996976/dream-power_byudms.png',
               }}
-            /> */}
+            />
             <Text style={styles.logo}>{name}</Text>
           </View>
           <View>
             <TouchableOpacity
 
-            //   onPress={() => navigation.navigate('notification')}
+              onPress={() => navigation.navigate('notification')}
             >
               <EIcon name="navicon" size={20} color="#fff" />
             </TouchableOpacity>

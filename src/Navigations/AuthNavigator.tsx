@@ -5,6 +5,7 @@ import Login from '../screens/Auth/Login';
 import Register from '../screens/Auth/Reegister';
 import ForgotPassword from '../screens/Auth/ForgotPassword';
 
+
 const AuthNavigator = () => {
   const Stack = createStackNavigator();
   return (
