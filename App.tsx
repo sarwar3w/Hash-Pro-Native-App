@@ -6,7 +6,7 @@ import AuthNavigator from './src/Navigations/AuthNavigator';
 
 
 const App = () => {
-  const token = true;
+  const token = false;
   return (
     <>
       {token ? (

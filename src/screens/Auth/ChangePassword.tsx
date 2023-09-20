@@ -1,42 +1,55 @@
 import {
-  View,
-  ScrollView,
   StyleSheet,
   Text,
+  View,
+  ScrollView,
   TouchableOpacity,
 } from 'react-native';
 import React, {useState} from 'react';
 import TextInputCustom from '../../components/Inputs';
 
-const Login = ({navigation}:any) => {
+const ChangePassword = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <ScrollView>
       <View style={styles.container}>
         <View style={styles.loginHeader}>
-          <Text style={styles.title}>Sign In</Text>
-          <Text style={styles.textStyle}>Let's Start to Earn #pro</Text>
+          <Text style={styles.title}>Change your Password</Text>
         </View>
         {/* form body */}
         <View style={styles.bodyform}>
-          {/* login field */}
+          {/* Current Password */}
           <View style={styles.inputField}>
-            <Text style={styles.label}>Username or Email</Text>
+            <Text style={styles.label}>Current Password</Text>
             <TextInputCustom
               placeholder="Enter Your Username or Email"
-              iconName="person"
+              iconName="lock-closed"
               iconColor="#F5C445"
               name="mobile"
               width="100%"
               defaultValue={''}
             />
           </View>
-          {/* password field */}
+          {/* New password */}
           <View style={styles.inputField}>
-            <Text style={styles.label}>Password</Text>
+            <Text style={styles.label}>New Password</Text>
             <TextInputCustom
               placeholder="Enter Your Password"
-              iconName="key"
+              iconName="lock-closed"
+              iconColor="#F5C445"
+              name="password"
+              width="100%"
+              defaultValue={''}
+              secureTextEntry={!isOpen}
+              rightIcon={isOpen ? 'eye-outline' : 'eye-off-outline'}
+            />
+          </View>
+          {/* Retype New Password */}
+          <View style={styles.inputField}>
+            <Text style={styles.label}>Retype New Password</Text>
+            <TextInputCustom
+              placeholder="Retype New Password"
+              iconName="lock-closed"
               iconColor="#F5C445"
               name="password"
               width="100%"
@@ -46,54 +59,36 @@ const Login = ({navigation}:any) => {
             />
           </View>
         </View>
-        {/* forgot password */}
-        <View style={styles.forgotPass}>
-          <TouchableOpacity
-            onPress={() => navigation.navigate('Forgot Password')}>
-            <Text style={styles.linkText}>Forgot Password?</Text>
-          </TouchableOpacity>
-        </View>
 
         {/* submit button */}
         <View style={styles.submitBtn}>
           <TouchableOpacity style={styles.btn}>
-            <Text style={styles.btnStyle}>Sign In</Text>
+            <Text style={styles.btnStyle}>Change</Text>
           </TouchableOpacity>
-        </View>
-
-        {/* redirect for signup */}
-        <View style={styles.redirectRow}>
-          <View
-            style={{
-              flexDirection: 'row',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}>
-            <Text style={styles.textStyle}>Don't have an account?</Text>
-            <TouchableOpacity onPress={() => navigation.navigate('Register')}>
-              <Text style={[styles.linkText, {marginLeft: 3}]}>Sign Up</Text>
-            </TouchableOpacity>
-          </View>
         </View>
       </View>
     </ScrollView>
   );
 };
 
-export default Login;
+export default ChangePassword;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    display: 'flex',
     width: '100%',
     height: '100%',
     paddingHorizontal: 15,
     paddingVertical: 20,
+    justifyContent: 'space-between',
   },
   loginHeader: {
     flexDirection: 'column',
-    alignItems: 'center',
+    alignItems: 'flex-start',
     justifyContent: 'center',
+    paddingVertical: 16,
+    height: 'auto',
   },
   title: {
     fontSize: 20,
@@ -106,6 +101,7 @@ const styles = StyleSheet.create({
     color: '#595959',
   },
   bodyform: {
+    height: 'auto',
     paddingTop: 10,
   },
   inputField: {
@@ -131,7 +127,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 10,
+    marginTop: 350,
     marginHorizontal: 40,
   },
   btn: {
@@ -147,11 +143,5 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontSize: 16,
     fontWeight: '500',
-  },
-  redirectRow: {
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginTop: 390,
   },
 });
